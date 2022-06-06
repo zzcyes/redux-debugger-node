@@ -1,4 +1,4 @@
- const initialState = {
+ const InitialState = {
      value: 0,
  };
 
@@ -13,7 +13,7 @@
      }),
  };
 
- const Reducer = (state = initialState, action) => {
+ const Reducer = (state, action) => {
      const { type, payload } = action;
      switch (type) {
          case "counter/incremented":
@@ -26,6 +26,7 @@
  };
 
  module.exports = {
-     counterAction: Action,
-     counterReducer: Reducer
+    couterInitialState: InitialState,
+    counterAction: Action,
+    counterReducer: Reducer
  }
